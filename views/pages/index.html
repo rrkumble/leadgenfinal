@@ -3,6 +3,12 @@
 <html data-wf-page="5dc24764dccaf6e2864b8345" data-wf-site="5dc24764dccaf6eb3c4b8344">
 
 <head>
+<!--Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--Floating WhatsApp css-->
+<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+<!--Floating WhatsApp javascript-->
+<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <meta charset="utf-8">
@@ -19,19 +25,109 @@
     <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
     <link href="https://via.placeholder.com/1000x600.png?text=IMAGE" rel="shortcut icon" type="image/x-icon">
     <link href="https://via.placeholder.com/1000x600.png?text=IMAGE" rel="apple-touch-icon">
+   
+    
+    <style>
+        #h{
+            margin-bottom: 50px;
+            margin-top: 10px;
+            padding-right: 100px;
+            width: 100px;
+            margin-right: 500px;
+        }
+        #submitform{
+            z-index: 1;
+            float:right;
+           margin-left: 50px;
+            width: 300px;
+           
+           
+        }
+
+        #call{
+            float:right;
+            height:50px;
+            width:50px;
+            margin-top: 0px;
+            margin-right: 10px;
+        }
+
+       #toolk{
+               color:crimson;
+       }
+
+       #logo1{
+           height:100px;
+           width:100px;
+       }
+
+       .tooltip1 {
+  position: relative;
+  display: inline-block;
+ 
+}
+
+.tooltip1 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  left: 0%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip1 .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip1:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+    </style>
+     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 </head>
 
 <body>
     <header class="navigation-section position-absolute">
+        <div id="call">
+            <div class="tooltip1"><img   src="https://ps.w.org/call-now-button/assets/icon-256x256.png?rev=1793650" alt="">
+               
+                <span class="tooltiptext">+917908999648</span>
+                
+                  
+               </div>
+
+          
+        
+        </div>
+       
         <div class="navigation-overlay"></div>
         <div class="navigation-and-offcanvas">
+            <div><img id="logo1" src="/images/logo2.png" alt=""></div>
             <div class="col no-margin-bottom lg-5 md-basis-uato">
-                <nav class="navigation-menu"><a href="index.html" class="nav-link w--current">Home</a><a href="about.html" class="nav-link">About</a><a href="service.html" class="nav-link">Services</a>
+                <nav class="navigation-menu"><a href="index.html" class="nav-link w--current">Home</a><a href="#aboutus" class="nav-link">About</a><a href="service.html" class="nav-link">Services</a>
                    
                 </nav>
             </div>
             <div class="col lg-2 md-basis-auto md-order-first no-margin-bottom-lg"><a href="#" class="brand w-inline-block"><img src="" alt=""></a></div>
-            <div class="col no-margin-bottom lg-5">
+            <div  class="col no-margin-bottom lg-5">
                 <nav class="navigation-menu justify-end"><a href="blog.html" class="nav-link">Portfolio</a><a href="general-contact.html" class="nav-link">Company</a>
                     <a data-w-id="e02ef0fd-d341-7eaf-5ed3-b53528c9af97" href="quote.html" class="button-primary animated is-small alignself-center w-inline-block">
                         <div class="button-primary-text">Contact</div>
@@ -50,28 +146,64 @@
         </div>
     </header>
     <div class="section is-hero position-relative bg-hero2 overflow-hidden md-sm-xs-no-padding-bottom flexv-justify-center">
-        <div class="decoration-rightside img-hero2"><img src="" width="2000" alt="" class="bg-hero-decor"></div>
-        <div data-w-id="bfddaba7-bdf9-7caf-a9f9-b00b1d0a3a8a" style="-webkit-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;filter:blur(5px)" class="decoration-rightside img-hero2"><img height="700" width="1500" src="/images/10..jpg" alt="" class="hero-image mb-3"></div>
+    <div class="decoration-rightside img-hero2">
+       
+    </div>
+        <div data-w-id="bfddaba7-bdf9-7caf-a9f9-b00b1d0a3a8a" style="-webkit-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(100PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;filter:blur(5px)" class="decoration-rightside img-hero2"><img height="700" width="1500" src="" alt="" class="hero-image mb-3"></div>
         <div class="container position-relative">
-            <div data-w-id="8708aa6a-d8d4-e3ac-bb7f-f062078774e3" style="-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;filter:blur(5px)" class="col lg-9 md-12">
-                <h1 class="c-herotext__main">You think We Create</h1>
-                <div class="color-dark text-medium margin-bottom">We believe financial advice is about more than just having a plan. <p>It’s about having the right plan for you.</p></div>
-                <a data-w-id="cf285295-027b-25e0-3964-b91a419e5388" href="#" class="button-primary animated w-inline-block">
+           
+            <div id="hi"data-w-id="8708aa6a-d8d4-e3ac-bb7f-f062078774e3" style="-webkit-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 100PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0;filter:blur(5px)" class="col lg-9 md-12">
+               
+                <h1 id="hi" >Focus on your Business</h><br><h> and leave the branding </h><br><h>to us.</h1>
+                <div class="color-dark text-medium margin-bottom"></p></div>
+                <a data-w-id="cf285295-027b-25e0-3964-b91a419e5388" href="service.html" class="button-primary animated w-inline-block">
                     <div style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="button-primary-text">free consultation</div>
                     <div style="opacity:0;display:block;-webkit-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-primary-text for-hover">let&#x27;s go <span class="fa margin-left"></span></div>
                 </a>
+               
             </div>
-            <div class="col lg-7 no-margin-bottom-lg"></div>
-        </div><img src="/images/18.jpg" alt="" class="header-image style-3">
-    </div>
-    <div class="section">
+              
+            <div id="submitform"class=" ">
+                <p >Subscribe us</p>
+                <div class="w-form">
+                    <form id="emailform" name="email-form" action="/subscribedata" method="POST"data-name="Email Form" >
+                        <input type="email" class="form-input-text is-grey margin-right-small lg-md-sm-no-margin-bottom w-input" maxlength="256" name="email2" data-name="Email 2" placeholder="Email" id="email-2" required=""><br>
+                        <input type="number" class="form-input-text is-grey margin-right-small lg-md-sm-no-margin-bottom w-input" maxlength="256" name="name2" data-name="Email 2" placeholder="Mobil no" id="email-2" required=""><br>
+                        <input type="submit" id="submitb" value="Subscribe" data-wait="Please wait..." class="button-primary is-small w-button">
+                    </form>
+                    <div class="w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="elfsight-app-f33b9864-94ed-42e7-b808-f4bd4eb57e93"></div>
+        </div>
+     </div>
+
+
+
+
+     
+
+    
+     <div class="section">
         <div class="container flex-horizontal">
-            <div class="col lg-4 flexv-space-between md-12">
+            <div class="col lg-4 flexv-space-between md-12" id="aboutus">
                 <div>
                     <div class="pre-title">Who we are</div>
-                    <div class="size-h2 margin-bottom">At Financia advisor we&#x27;re all about you, so you can be about your business</div>
-                    <div class="text-medium low-text-contrast">Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur.</div>
-                </div><a href="#" class="cta-link"><span class="margin-right">Let&#x27;s talk</span><span class="fa c-cta1_arrow-hovered"></span> <span class="fa c-cta1__arrow-normal"></span></a>
+                    <div class="size-h2 margin-bottom">About</div>
+                    <div class="text-medium low-text-contrast"> <p>
+                  We have huge network mapping all over India of content writers, web developers, Digital Marketers, Graphics Designers, UI/UX designers, Video editors and Videographers focus on providing IT and Marketing solutions to everyone who has a specific budget range. 
+
+
+                 More details >> 
+
+
+                    </p></div>
+                </div><a href="service.html" class="cta-link"><span class="margin-right">Let&#x27;s talk</span><span class="fa c-cta1_arrow-hovered"></span> <span class="fa c-cta1__arrow-normal"></span></a>
             </div>
             <div class="col lg-1 no-margin-bottom"></div>
             <div class="col lg-7 no-margin-bottom-lg md-12">
@@ -80,28 +212,31 @@
                         <div class="c-iconbox1__icon"><img src="/images/19.jpg" alt=""></div>
                         <div class="padding-top">
                             <div class="size-h3 on-lg-margin-bottom">Client-Centered Approach</div>
-                            <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor </div>
+                            <div> We focus on getting the best possible services for your business to grow in leaps and bounds </div>
                         </div>
                     </div>
                     <div class="col lg-6 md-12 md-margin-bottom-small flexh-align-top">
                         <div class="c-iconbox1__icon"><img src="/images/20.jpg" alt=""></div>
                         <div class="padding-top">
                             <div class="size-h3 on-lg-margin-bottom">True Wealth Management</div>
-                            <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor </div>
+                            <div>We have our own strategic team who help you to understand how the money you spend will be split into the different services and how it will be beneficial for your business.  </div>
                         </div>
                     </div>
                     <div class="col lg-6 md-12 md-margin-bottom-small flexh-align-top">
                         <div class="c-iconbox1__icon"><img src="/images/21.jpg" alt=""></div>
                         <div class="padding-top">
                             <div class="size-h3 on-lg-margin-bottom">Easy &amp; Efficient Plan Process</div>
-                            <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor </div>
+                            <div>Our work process is easy and completely transparent. 
+
+                            </div>
                         </div>
                     </div>
                     <div class="col lg-6 md-12 md-margin-bottom-small flexh-align-top">
                         <div class="c-iconbox1__icon"><img src="/images/22.jpg" alt=""></div>
                         <div class="padding-top">
-                            <div class="size-h3 on-lg-margin-bottom">A Fiduciary Partner</div>
-                            <div>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor </div>
+                            <div class="size-h3 on-lg-margin-bottom">Work network all over India</div>
+                            <div> Our workforce is present all over India and is always ready to help.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,65 +246,82 @@
     <div class="section no-padding-top-bottom">
         <div class="container">
             <div class="col lg-12 no-margin-bottom">
-                <div class="hr"></div>
+                <div class="hr"></div><br>
+                <h2 class=" ml-5  text-align-center">Services</h2>
             </div>
         </div>
+
+        
     </div>
-    <div class="section position-relative">
-        <div class="c-shadowtext">Services</div>
-       
+    
     <div class="section has-bg-accent position-relative">
         <div class="c-shadowtext">Why us?</div>
         <div class="container margin-bottom-quad">
-            <div class="col lg-5 alignself-center md-12">
+            <div class="col lg-5 alignself-center md-12 mt-5">
                 <div class="pre-title">Solutions For Every Business</div>
                 <h2>Diverse capabilities</h2>
-                <p class="low-text-contrast text-medium">Our system is a comprehensive system of applied creativity that connects a process of creative problem solving with skills and tools to make that process work. </p>
+                <p class="low-text-contrast text-medium">We offer complete Branding, marketing and IT services and solutions. All over the world in the following fields. </p>
                 <ul class="c-checklist margin-bottom-double">
-                    <li class="c-checklist_item">Creative Problem Solving</li>
-                    <li class="c-checklist_item">Igniting the Conscious and the Subconscious business realities</li>
-                    <li class="c-checklist_item">The creative new input for developing sustainable business strategies</li>
+                    <li class="c-checklist_item">Web development</li>
+                    <li class="c-checklist_item">Web desiging</li>
+                    <li class="c-checklist_item">Mobile App development</li>
+                    <li class="c-checklist_item">Digital Markewting</li>
+                    <li class="c-checklist_item">Video Production & Editing</li>
                 </ul>
-                <a data-w-id="8f4d69e5-b8ce-97df-5a1b-3cfdfd580f57" href="#" class="button-primary animated w-inline-block">
+                <a data-w-id="8f4d69e5-b8ce-97df-5a1b-3cfdfd580f57" href="service.html" class="button-primary animated w-inline-block">
                     <div style="-webkit-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:1" class="button-primary-text">View more</div>
                     <div style="opacity:0;display:block;-webkit-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 20PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-primary-text for-hover">let&#x27;s go <span class="fa margin-left"></span></div>
                 </a>
             </div>
             <div class="col lg-1 no-margin-bottom"></div>
             <div class="col lg-6 md-12">
-                <div class="w-layout-grid c-services">
-                    <a data-w-id="fa761249-6d2b-3e34-3938-d628130e0297" style="background-color:rgb(255,255,255)" href="#" class="c-services__card has-shadow has-hover-style-1 w-inline-block">
+                <div id="jl" class="w-layout-grid c-services">
+                    <a data-w-id="fa761249-6d2b-3e34-3938-d628130e0297" style="background-color:rgb(255,255,255)" href="web.html" class="c-services__card has-shadow has-hover-style-1 w-inline-block">
                         <div class="c-services__card-outer">
-                            <div style="-webkit-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(85,101,117)" class="c-services__card-inner"><img src="/images/11.jpg" width="64" alt="" class="margin-bottom">
-                                <h4 style="color:rgb(29,43,54)" class="c-services__header">Comprehensive Financial Planning</h4>
-                                <div style="color:rgb(85,101,117)" class="margin-bottom is-body-text">Curabitur blandit tempus porttitor donec id elit non </div>
+                            <div style="-webkit-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(85,101,117)" class="c-services__card-inner"><img src="https://qph.fs.quoracdn.net/main-qimg-df690fd64ca5338293a6e76c06564443" width="64" alt="" class="margin-bottom">
+                                <h4 style="color:rgb(29,43,54)" class="c-services__header"><p></p>Web Developement</h4>
+                                <div style="color:rgb(85,101,117)" class="margin-bottom is-body-text">Wordpress, PHP, Angular, Node, ReactJS. 
+                                    Learn more.... </div>
                                 <div class="iconfont"><em class="iconfont__no-italize"></em></div>
                             </div>
                         </div>
                     </a>
-                    <a data-w-id="7890ee21-a296-58b8-3cc2-d2e7ceddf8ff" style="background-color:rgb(255,255,255)" href="#" class="c-services__card has-shadow has-hover-style-1 slidedown w-inline-block">
+                    <a data-w-id="7890ee21-a296-58b8-3cc2-d2e7ceddf8ff" style="background-color:rgb(255,255,255)" href="digital.html" class="c-services__card has-shadow has-hover-style-1 slidedown w-inline-block">
                         <div class="c-services__card-outer">
-                            <div style="-webkit-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(85,101,117)" class="c-services__card-inner"><img src="/images/12.jpg" width="64" alt="" class="margin-bottom">
-                                <h4 style="color:rgb(29,43,54)" class="c-services__header">Outstanding, Experienced Team</h4>
-                                <div style="color:rgb(85,101,117)" class="margin-bottom is-body-text">Nullam id dolor id nibh ultricies vehicula ut id elit</div>
+                            <div style="-webkit-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(85,101,117)" class="c-services__card-inner"><img src="https://images.unsplash.com/photo-1537731121640-bc1c4aba9b80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" width="64" alt="" class="margin-bottom">
+                                <h4 style="color:rgb(29,43,54)" class="c-services__header"> Digital Marketing</h4>
+                                <div style="color:rgb(85,101,117)" class="margin-bottom is-body-text">We undertake the entire branding Learn more....</div>
                                 <div class="iconfont"><em class="iconfont__no-italize"></em></div>
                             </div>
                         </div>
                     </a>
-                    <a data-w-id="73e38929-1fed-4e43-33b4-534bd46306bf" style="background-color:rgb(255,255,255)" href="#" class="c-services__card has-shadow has-hover-style-1 w-inline-block">
+                    <a data-w-id="73e38929-1fed-4e43-33b4-534bd46306bf" style="background-color:rgb(255,255,255)" href="editing.html" class="c-services__card has-shadow has-hover-style-1 w-inline-block">
                         <div class="c-services__card-outer">
-                            <div style="-webkit-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(85,101,117)" class="c-services__card-inner"><img src="/images/13.jpg" width="64" alt="" class="margin-bottom">
-                                <h4 style="color:rgb(29,43,54)" class="c-services__header">Specialized Attention for Each Client</h4>
-                                <div style="color:rgb(85,101,117)" class="margin-bottom is-body-text">Curabitur blandit tempus porttitor donec id elit non </div>
+                            <div style="-webkit-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(85,101,117)" class="c-services__card-inner"><img src="https://www.digiquestacademy.edu.in/wp-content/uploads/2019/10/Graphic-Designing1.jpg" width="64" alt="" class="margin-bottom">
+                                <h4 style="color:rgb(29,43,54)" class="c-services__header">Graphics Designing</h4>
+                                <div style="color:rgb(85,101,117)" class="margin-bottom is-body-text">We undertake all sorts of Graphics designing work Learn more....</div>
                                 <div class="iconfont"><em class="iconfont__no-italize"></em></div>
                             </div>
                         </div>
                     </a>
-                    <a data-w-id="c3535d5d-8c5e-f24f-ac16-fa52fe089ca1" style="background-color:rgb(255,255,255)" href="#" class="c-services__card has-shadow has-hover-style-1 slidedown w-inline-block">
+                    <a data-w-id="c3535d5d-8c5e-f24f-ac16-fa52fe089ca1" style="background-color:rgb(255,255,255)" href="editing.html" class="c-services__card has-shadow has-hover-style-1 slidedown w-inline-block">
                         <div class="c-services__card-outer">
-                            <div style="-webkit-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(85,101,117)" class="c-services__card-inner"><img src="/images/14.jpg" width="64" alt="" class="margin-bottom">
-                                <h4 style="color:rgb(29,43,54)" class="c-services__header">Proprietary Tools</h4>
-                                <div style="color:rgb(85,101,117)" class="margin-bottom is-body-text">Nullam id dolor id nibh ultricies vehicula ut id elit</div>
+                            <div style="-webkit-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(85,101,117)" class="c-services__card-inner"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlyp3GnYg_1JbRgA6u1Wn-jdbUB4kEhsB50rBoknVo98a5jOif&usqp=CAU" width="64" alt="" class="margin-bottom">
+                                <h4 style="color:rgb(29,43,54)" class="c-services__header">Content Writers</h4>
+                                <div style="color:rgb(85,101,117)" class="margin-bottom is-body-text">We undertake all sorts of content writing work. 
+                                   
+                                   Learn more....
+                                    </div>
+                                <div class="iconfont"><em class="iconfont__no-italize"></em></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a data-w-id="c3535d5d-8c5e-f24f-ac16-fa52fe089ca1" style="background-color:rgb(255,255,255)" href="editing.html" class="c-services__card has-shadow has-hover-style-1 slidedown w-inline-block">
+                        <div class="c-services__card-outer">
+                            <div style="-webkit-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 80PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);color:rgb(85,101,117)" class="c-services__card-inner"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfPrptjXlTGpV_K15i3aWgyIJLImlJRA34ZdgyYMGQ6IeX37F_&usqp=CAU" width="64" alt="" class="margin-bottom">
+                                <h4 style="color:rgb(29,43,54)" class="c-services__header"> Video Production & Editing</h4>
+                                <div style="color:rgb(85,101,117)" class="margin-bottom is-body-text">We provide a professional level of Video Production Learn more....
+                                </div>
                                 <div class="iconfont"><em class="iconfont__no-italize"></em></div>
                             </div>
                         </div>
@@ -185,36 +337,37 @@
                     <div class="w-slider-mask">
                         <div class="w-slide">
                             <div class="container flexh-align-center">
-                                <div class="col no-margin-bottom lg-6 md-12 order-last"><img src="/images/24.jpg" width="320" alt=""></div>
+                                <div class="col no-margin-bottom lg-6 md-12 order-last"><img src="" width="320" alt=""></div>
                                 <div class="col lg-1"></div>
                                 <div class="col no-margin-bottom lg-5 position-relative md-12">
-                                    <div class="text-large weight-is-thin margin-bottom">Every financial decision involves relationships. Every relationship involves financial decisions.</div>
-                                    <div class="is-bold">Johny Baldon</div>
-                                    <div class="text-small">CEO at Turus Berkarya</div>
+                                    <div class="text-large weight-is-thin margin-bottom"> I felt so touched when the discovery call was taken directly by the CEO and for the next 30 mins, we were just discussing my business and how to grow it, branding solutions and that call was very helpful and insightful on why and how should I brand my business. Very happy with their services and the quality of work. Keep it up. Best wishes. </div>
+                                    <div class="is-bold">- Mr Karamveer Kapoor </div>
+                                    <div class="text-small"></div>
                                     <div class="c-quote__marker">“</div>
                                 </div>
                             </div>
                         </div>
                         <div class="w-slide">
                             <div class="container flexh-align-center">
-                                <div class="col no-margin-bottom lg-6 md-12 order-last"><img src="/images/25.jpg" alt=""></div>
+                               
                                 <div class="col lg-1"></div>
                                 <div class="col no-margin-bottom lg-5 position-relative md-12">
-                                    <div class="text-large weight-is-thin margin-bottom">Very happy with our new website very quick turnaround and excellent customer service</div>
-                                    <div class="is-bold">Christian Soilo</div>
-                                    <div class="text-small">Managing Director @Semanding</div>
+                                    <div class="text-large weight-is-thin margin-bottom">I needed Social Media Optimisation and marketing services. And the results were great. I was able to know and see how a good social presence can help drastically increases the sales aspect in the business and build so much trust in the brand. 
+                                    </div>
+                                    <div class="is-bold">- Mrs Shalini Arora</div>
+                                    <div class="text-small"></div>
                                     <div class="c-quote__marker">“</div>
                                 </div>
                             </div>
                         </div>
                         <div class="w-slide">
                             <div class="container flexh-align-center">
-                                <div class="col no-margin-bottom lg-6 md-12 order-last"><img src="/images/26.jpg" width="287" alt=""></div>
+                               
                                 <div class="col lg-1"></div>
                                 <div class="col no-margin-bottom lg-5 position-relative md-12">
-                                    <div class="text-large weight-is-thin margin-bottom">I would highly recommend them! They always treat my business as if she was one of theirs!</div>
-                                    <div class="is-bold">Baharuddin Muamari</div>
-                                    <div class="text-small">Executive Producer @Joyoboyo</div>
+                                    <div class="text-large weight-is-thin margin-bottom">I knew what all is required for digital marketing and stuff but I never had the time to devote for actually branding my company. Leadgenpro is like one-stop-shop every service in terms </div>
+                                    <div class="is-bold"></div>
+                                    <div class="text-small"></div>
                                     <div class="c-quote__marker">“</div>
                                 </div>
                             </div>
@@ -230,154 +383,37 @@
                 </div>
             </div>
         </div>
-        <div class="c-shadowtext">clients<br>say</div>
+        
     </div>
-    <div class="section has-bg-accent position-relative">
-        <div class="container">
-            <div class="col block-centered lg-10 md-12">
-                <div class="c-financial-finder text-align-center">
-                    <div class="pre-title">Ready to start a conversation?</div>
-                    <h2 class="text-align-center md-size-h3">Subscribe our services</h2>
-                    <div class="text-align-center margin-bottom">We will soon contact you</div>
-                    <div class="w-form">
-                       
-                        <div class="w-form-done">
-                            <div>Thank you! Your submission has been received!</div>
-                        </div>
-                        <div class="w-form-fail">
-                            <div>Oops! Something went wrong while submitting the form.</div>
-                        </div>
-                    </div>
-                    <div class="text-xsmall text-align-center low-text-contrast">Check the background of Our Firm and Investment Professionals on <a href="#">FINRA&#x27;s Broker/Check</a>.</div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="col lg-12">
-                <div class="w-layout-grid c-grid4x2">
-                    <div class="fa-brand _70px"></div>
-                    <div class="fa-brand _70px"></div>
-                    <div class="fa-brand _70px"></div>
-                    <div class="fa-brand _70px"></div>
-                    <div class="fa-brand _70px"></div>
-                    <div class="fa-brand _70px"></div>
-                    <div class="fa-brand _70px"></div>
-                    <div class="fa-brand _70px"></div>
-                </div>
-            </div>
-        </div>
-        <div class="c-shadowtext">Advisor<br>finder</div>
-    </div>
-    <div class="section">
-        <div class="container">
-            <div class="col lg-6 md-12">
-                <h2>Our impact in numbers</h2>
-            </div>
-            <div class="col lg-1 hidden-md"></div>
-            <div class="col lg-3 md-6 xs-12">
-                <div>Fusce dapibus maaecenas faucibus mollis interdumb </div>
-            </div>
-            <div class="col lg-3 md-6 xs-12">
-                <div>Fusce dapibus lorem tellus ac cursus commodo ipsum</div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="col lg-3 md-6 xs-12">
-                <div class="c-counter has-shadow is-featured">
-                    <div class="flexh-space-between flexh-align-center margin-bottom">
-                        <div class="weight-is-medium">ROI</div><img src="/images/1.jpg" width="32" alt="">
-                    </div>
-                    <div class="text-xlarge text-align-center">28%</div>
-                    <div class="text-align-center text-small">micro &amp; macro indicators</div>
-                </div>
-            </div>
-            <div class="col lg-3 md-6 xs-12">
-                <div class="c-counter has-shadow">
-                    <div class="flexh-space-between flexh-align-center margin-bottom">
-                        <div class="weight-is-medium">Portfolio</div><img src="/images/2.jpg" width="32" alt="">
-                    </div>
-                    <div class="text-xlarge text-align-center is-heading-color">$17 <span class="text-small">Billion</span></div>
-                    <div class="text-align-center text-small">of sucessful investment</div>
-                </div>
-            </div>
-            <div class="col lg-3 md-6 xs-12">
-                <div class="c-counter has-shadow">
-                    <div class="flexh-space-between flexh-align-center margin-bottom">
-                        <div class="weight-is-medium">Hedgefund</div><img src="/images/3.jpg" width="32" alt="">
-                    </div>
-                    <div class="text-xlarge text-align-center is-heading-color">928</div>
-                    <div class="text-align-center text-small">business partnerships</div>
-                </div>
-            </div>
-            <div class="col lg-3 md-6 xs-12">
-                <div class="c-counter has-shadow">
-                    <div class="flexh-space-between flexh-align-center margin-bottom">
-                        <div class="weight-is-medium">Experience</div><img src="/images/4.jpg" width="32" alt="">
-                    </div>
-                    <div class="text-xlarge text-align-center is-heading-color">17 <span class="text-small">Years</span></div>
-                    <div class="text-align-center text-small">of succesful investing</div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
+    
    
-    <div class="section position-relative">
-        <div class="container">
-            <div class="col lg-7 md-12 block-centered text-align-center">
-                <div class="pre-title">From our blog</div>
-                <h2>Latest news and articles</h2>
+    <div class="section no-padding-bottom has-bg-accent ">
+        <div class="container flexh-align-center">
+            <div class="col no-margin-bottom lg-6 md-12 order-last"><img src="/images/9.jpg" width="310" alt=""></div>
+            <div class="col lg-1"></div>
+            <div class="col no-margin-bottom lg-5 position-relative md-12">
+                <div class="text-large weight-is-thin margin-bottom">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</div>
+                <div class="is-bold">Johny Baldon</div>
+                <div class="text-small">CEO at Turus Berkarya</div>
+                <div class="c-quote__marker"></div>
             </div>
         </div>
-        <div class="container">
-            <div class="col lg-4 md-12">
-                <div class="c-gridpost__card"><img src="/images/5.jpg" sizes="(max-width: 479px) 90vw, (max-width: 767px) 93vw, (max-width: 991px) 95vw, 29vw" alt="" class="c-gridpost__image">
-                    <div class="c-gridpost__category style3"><a href="#" class="c-gridpost__category-link">finance</a> / <a href="#" class="c-gridpost__category-link">investment</a></div>
-                    <a href="#" class="c-gridpost__clickable w-inline-block">
-                        <div class="c-gridpost__text style2">
-                            <h3 class="margin-bottom">What I’ve Learned Working In Finance For Six Years</h3>
-                            <div class="text-small low-text-contrast">07 June 2020</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col lg-4 md-12">
-                <div class="c-gridpost__card"><img src="/images/6.jpg" sizes="(max-width: 479px) 90vw, (max-width: 767px) 93vw, (max-width: 991px) 95vw, 29vw" alt="" class="c-gridpost__image">
-                    <div class="c-gridpost__category style3"><a href="#" class="c-gridpost__category-link">Wealth</a> / <a href="#" class="c-gridpost__category-link">retirement plan</a></div>
-                    <a href="#" class="c-gridpost__clickable w-inline-block">
-                        <div class="c-gridpost__text style2">
-                            <h3 class="margin-bottom">The New Rules of Personal Finance in Wealth Management</h3>
-                            <div class="text-small low-text-contrast">07 June 2020</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col lg-4 md-12">
-                <div class="c-gridpost__card"><img src="/images/7.jpg" alt="" class="c-gridpost__image">
-                    <div class="c-gridpost__category style3"><a href="#" class="c-gridpost__category-link">management</a> / <a href="#" class="c-gridpost__category-link">family</a></div>
-                    <a href="#" class="c-gridpost__clickable w-inline-block">
-                        <div class="c-gridpost__text style2">
-                            <h3 class="margin-bottom">Thoughts from Crypto Finance Conference in Swiss 2020</h3>
-                            <div class="text-small low-text-contrast">07 June 2020</div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="c-shadowtext">blog</div>
     </div>
-    <footer class="section section-footer-dark padding-bottom-16">
+    
+    <footer class="section section-footer-dark padding-bottom-16 mt-5">
         <div class="container margin-bottom">
-            <div class="col lg-2 md-12 md-order-first"><img src="/images/8.jpg" alt=""></div>
+            <div class="col lg-2 md-12 md-order-first"><img src="/images/logo2.png" alt=""></div>
             <div class="col lg-6 md-12 no-margin-bottom-lg">
                 <div class="container container-nested">
                     <div class="col lg-4 md-12 no-margin-bottom-lg">
-                        <h4 class="on-dark">Company</h4><a href="#" class="footer-nav-link on-dark">About</a><a href="#" class="footer-nav-link on-dark">Services</a><a href="#" class="footer-nav-link on-dark">Career</a><a href="#" class="footer-nav-link on-dark">Sitemap</a><a href="#" class="footer-nav-link on-dark">Terms of privacy</a>
+                        <h4 class="on-dark">Company</h4><a href="index.html" class="footer-nav-link on-dark">Home</a><a href="#aboutus" class="footer-nav-link on-dark">About</a><a href="general-contact.html" class="footer-nav-link on-dark">company</a>
                     </div>
                     <div class="col lg-4 md-12 no-margin-bottom-lg">
-                        <h4 class="on-dark">Finance services</h4><a href="#" class="footer-nav-link on-dark">Finance transformation</a><a href="#" class="footer-nav-link on-dark">Lean finance</a><a href="#" class="footer-nav-link on-dark">Finance strategy</a><a href="#" class="footer-nav-link on-dark">Post—merger finance integration</a>
+                        <h4 class="on-dark"> services</h4><a href="service.html" class="footer-nav-link on-dark">services</a><a href="service.html" class="footer-nav-link on-dark">Technology</a><a href="blog.html" class="footer-nav-link on-dark">portfolio</a>
                     </div>
-                    <div class="col lg-4 md-12 no-margin-bottom">
-                        <h4 class="on-dark">Industries</h4><a href="#" class="footer-nav-link on-dark">Building and Construction</a><a href="#" class="footer-nav-link on-dark">Consumer Markets</a><a href="#" class="footer-nav-link on-dark">Defence and Aerospace</a><a href="#" class="footer-nav-link on-dark">Family enterprise</a>
+                    <div class="col lg-4 md-12 no-margin-bottom-lg">
+                        <h4 class="on-dark"> Contact</h4><a href="quote.html" class="footer-nav-link on-dark">Contact</a><a href="quote.html" class="footer-nav-link on-dark">Subscribe</a>
                     </div>
                 </div>
             </div>
@@ -416,7 +452,7 @@
                         <div>Oops! Something went wrong while submitting the form.</div>
                     </div>
                 </div>
-                <div class="low-text-contrast text-xsmall margin-bottom-double">Join our newsletter to stay up to date on features and releases</div>
+               
                 <div class="flexh-space-between">
                     <a href="#" class="c-social on-dark w-inline-block">
                         <div class="fa-brand"></div>
@@ -448,7 +484,7 @@
                 </div>
             </div>
             <div class="col lg-6 no-margin-bottom md-12">
-                <div class="w100 text-align-right footer-bottom md-text-align-left margin-bottom">Made in Surabaja, Indonesia</div>
+                <div class="w100 text-align-right footer-bottom md-text-align-left margin-bottom">Made in India, Banglore</div>
             </div>
         </div>
     </footer>

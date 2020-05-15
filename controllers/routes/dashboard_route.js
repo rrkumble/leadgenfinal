@@ -19,7 +19,7 @@ const apiRouter=require('./api_route')
 
 
  
-var admindata=[{email:"regdfvbg",password:"hero"}]
+
 
 
 app.get('/',function(req,res){
@@ -28,19 +28,19 @@ app.get('/',function(req,res){
   k.sort({_id:'descending'}).exec(function(err,data){
     if (err) throw err;
     else{
-     admindata=data;
-     
+      req.session.adminemail=data[0].email
+      req.session.adminpassword=data[0].password
+      res.sendFile(path.join(__dirname,'../../views/dashboard/login.html'))
     }
     // req.session.adminemail=data[0].email
     // req.session.adminemail=data[0].password
 
-    app.use('/',static(),serveStatic(path.join(__dirname,'../../views/dashboard')));
+   
   })
 
 
-  req.session.adminemail=admindata[0].email
-  req.session.adminpassword=admindata[0].password
-    res.sendFile(path.join(__dirname,'../../views/dashboard/login.html'))
+  
+    
 })
 
 
@@ -81,7 +81,7 @@ app.get('/dashboard',validation(),function(req,res){
    
    
  
-   
+  app.use('/',static(),serveStatic(path.join(__dirname,'../../views/dashboard')));
 
 res.sendFile(path.join(__dirname,'../../views/dashboard/index.html'))
 
